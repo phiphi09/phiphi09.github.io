@@ -1,0 +1,116 @@
+@media screen and (min-width:601px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container01{
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .container02{
+        text-align:center;
+        margin: 50px 0;
+    }
+    .container03{
+        display: flex;
+        flex-wrap:wrap;
+        gap:20px 80px;
+        justify-content:center;
+        margin: 20px;
+    }
+    img{
+        display:block;
+      }
+    .box1{
+        text-align: center;
+        margin: -50px 40px;
+        font-size: 30px;
+        }
+    h1{
+        text-align: center;
+        margin: 30px 0;
+        font-size: 60px;
+    }
+    a {
+        text-decoration:none;
+    }
+    .logo01{
+        width:70mm;
+    }
+    .logo02{
+        width:140mm;
+    }
+    .layout02{
+        border: 1px solid black;
+    }
+    h2{
+    margin: -5px 0;
+    }
+    h6{
+        font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+        font-weight: 400; 
+        font-style: normal;
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    }
+    @media screen and (max-width:600px) {
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container01{
+            margin: 0;
+            padding: 0;
+            
+            
+        }
+        .container02{
+            text-align:center;
+            margin: 50px 0;
+        }
+        .container03{
+            display: flex;
+            flex-wrap:wrap;
+            gap:20px 80px;
+            justify-content:center;
+            margin: 20px;
+        }
+        img{
+            display:block;
+          }
+        .layout02{
+            border: 1px solid black;
+        }
+        .box1{
+            text-align: center;
+            margin: -50px 40px;
+            font-size: 30px;
+            }
+        h1{
+            text-align: center;
+            margin: 30px 0;
+            font-size: 60px;
+        }
+        a {
+            text-decoration:none;
+        }
+        .logo01{
+            width:70mm;
+        }
+        .logo02{
+            width:126mm;
+        }
+        h2{
+        margin: -5px 0;
+        }
+        h6{
+            font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+            font-weight: 400; 
+            font-style: normal;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+    }

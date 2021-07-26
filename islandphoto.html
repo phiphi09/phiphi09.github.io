@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>islandphoto</title>
+    <link rel="stylesheet" href="islandphoto.css">
+    <link rel="icon" href="http://drive.google.com/uc?export=view&id=1X7FHA0btgWgUdECHm5GK81FG6pP5yWSR" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://drive.google.com/uc?export=view&id=1X7FHA0btgWgUdECHm5GK81FG6pP5yWSR">
+    <style>
+        #modal {
+        display: none;
+        }
+        .modal {
+        margin: auto;
+        padding-top: 5%;
+        width: 50%;
+        height: 80%;
+        z-index: 1;
+        }
+        .modal img {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        display: block;
+        padding: 10px;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2), 0 10px 20px rgb(0, 0, 0, 0.2);
+        border-radius: 12px;
+        border: 1px solid white;
+        }
+        @keyframes zoom {
+        from {transform: scale(0.1)}
+        to {transform: scale(1)}
+        }
+        .thum-img {
+        float: center;
+        width: 240px;
+        height: 180px;
+        margin: 0;
+        display: block;
+        padding: 0px;
+        }
+        </style>
+</head>
+<body>
+    <div style='position:fixed;width:100%;height:100%;background-color:rgb(0,0,0,0.65)' id='modal'>
+        <div class='modal' id='modalw'>
+        <img id='bgImg' />
+        </div>
+        </div>
+    <div class=container>
+        <h1 class="title">ISLAND PHOTO</h1>
+        <div class="photo-list">
+            <div>
+                <img onclick='showBgImg(this)' class='thum-img' src='http://drive.google.com/uc?export=view&id=1cceXhSHxQvwKrcATsP1SuySTJ8a9nzIt' />
+                <p class="works-name">オーロラ</p>
+            </div>
+
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1J53t6M2YF6sZITE9kekwFOjYMUausOE3' onclick='showBgImg(this)'/> 
+                <p class="works-name">発電所</p>
+            </div>
+
+            <div>
+            <img class='thum-img' src='http://drive.google.com/uc?export=view&id=10wnm--G91V_bFVnKv7chZPJ0LoKvF7RQ' onclick='showBgImg(this)'/> 
+            <p class="works-name">大地</p>
+            </div>
+
+            <div>
+            <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1vWVu5lS4IeuuMw64_VQ3cPG9Zl1KlFuR' onclick='showBgImg(this)'/>
+            <p class="works-name">大地の車</p>
+            </div>
+
+            <div>
+            <img class='thum-img' src='http://drive.google.com/uc?export=view&id=11vAO9NQbfS1Se0eeQU1rg2Xhn8RbCqY-' onclick='showBgImg(this)'/>
+            <p class="works-name">教会</p>
+            </div>
+                            
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1ZmY22-qnwZicboriLgcvVb9f36DdOAFH' onclick='showBgImg(this)'/>
+                <p class="works-name">The Sun Voyager</p>
+            </div>
+                        
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1jDMGImwybcpKWJ6STYwoZy1RkeeTxtkz' onclick='showBgImg(this)'/>
+                <p class="works-name">Harpa Concert Hall</p>
+            </div>       
+
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1KXJU5IdGxexvcEA0s73Z0HfsoBMT9aFL' onclick='showBgImg(this)'/>
+                <p class="works-name">街</p>
+            </div>  
+                
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1N5Kon2UURI9qacIPlb7AZPGbOID3iD3Z' onclick='showBgImg(this)'/>
+                <p class="works-name">Diamond Beach</p>
+            </div>  
+                
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1y3ZSHkG5dcBiygBxX02ZiAi7tZFbBo0x' onclick='showBgImg(this)'/>
+                <p class="works-name">Skogafoss</p>
+            </div> 
+                    
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1yWuvXfLJ_Q3iomQdyKsxqKnnoPxu8ty0' onclick='showBgImg(this)'/>
+                <p class="works-name">氷河</p>
+            </div> 
+                        
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1XSPek_XtshkefPp-Jx2vEXf-V18DUKJO' onclick='showBgImg(this)'/>
+                <p class="works-name">氷の穴</p>
+            </div> 
+        </div>
+        <div class=box1>
+            <a href="mainpage02.html"><br><p>TOP</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById('modal');
+        var bgImg = document.getElementById('bgImg');
+        function showBgImg(e) {
+        modal.style.display = 'block';
+        bgImg.src = e.src;
+        }
+        bgImg.onclick = function() {
+        modal.style.display = 'none';
+        }
+        </script>
+</body>
+</html>
