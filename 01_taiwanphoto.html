@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taiwanphoto</title>
+    <link rel="stylesheet" href="taiwanphoto.css">
+    <link rel="icon" href="http://drive.google.com/uc?export=view&id=1SGEZFdwAV41596g9Fl_B1P32cSSMlGaz" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://drive.google.com/uc?export=view&id=1SGEZFdwAV41596g9Fl_B1P32cSSMlGaz">
+    <style>
+        #modal {
+        display: none;
+        }
+        .modal {
+        margin: auto;
+        padding-top: 5%;
+        width: 50%;
+        height: 80%;
+        z-index: 1;
+        }
+        .modal img {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        display: block;
+        padding: 10px;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2), 0 10px 20px rgb(0, 0, 0, 0.2);
+        border-radius: 12px;
+        border: 1px solid white;
+        }
+        @keyframes zoom {
+        from {transform: scale(0.1)}
+        to {transform: scale(1)}
+        }
+        .thum-img {
+        float: center;
+        width: 240px;
+        height: 180px;
+        margin: 0;
+        display: block;
+        padding: 0px;
+        }
+        </style>
+</head>
+<body>
+    <div style='position:fixed;width:100%;height:100%;background-color:rgb(0,0,0,0.65)' id='modal'>
+        <div class='modal' id='modalw'>
+        <img id='bgImg' />
+        </div>
+        </div>
+    <div class=container>
+        <h1 class="title">TAIWAN PHOTO</h1>
+        <div class="photo-list">
+            <div>
+                <img onclick='showBgImg(this)' class='thum-img' src='http://drive.google.com/uc?export=view&id=1iP9EL7A9H7ZFSRc-kP6D2a0G-0eXCN9C' />
+                <p class="works-name">農夫</p>
+            </div>
+
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1gsQsHFK-W71FqxDhvtM-KClClaiO1gCI' onclick='showBgImg(this)'/> 
+                <p class="works-name">電車</p>
+            </div>
+
+            <div>
+            <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1tRwdx3z2lniSEYSajXnTNWjuH7UK4ib2' onclick='showBgImg(this)'/> 
+            <p class="works-name">電車のマーク</p>
+            </div>
+
+            <div>
+            <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1A4yCEivn62VJ_H3RCd4slwqu2-oxeahT' onclick='showBgImg(this)'/>
+            <p class="works-name">自転車で台湾一周</p>
+            </div>
+
+            <div>
+            <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1LcvbHe5WwzRSmC-kLB8FEFv1ASrTSpMU' onclick='showBgImg(this)'/>
+            <p class="works-name">七星潭</p>
+            </div>
+                            
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1NogPiZdjX6GZTmgkkOAtp8eNtJ9oZYXK' onclick='showBgImg(this)'/>
+                <p class="works-name">石</p>
+            </div>
+                        
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1KwfUDO9cIxV7Q2r-4689Ed4ruQnOmfms' onclick='showBgImg(this)'/>
+                <p class="works-name">日月潭</p>
+            </div>       
+
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1uZbYH_d0Bd0P2rdfk4Y6Zf8jP8qS9162' onclick='showBgImg(this)'/>
+                <p class="works-name">花蓮</p>
+            </div>  
+                
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1hmUCGZY6WzXrWAEgoKV9ogD2Ac_DU64l' onclick='showBgImg(this)'/>
+                <p class="works-name">女王頭</p>
+            </div>  
+                
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1-0kl41AEr4CClky1vYIi2D8Q3Z72K0UK' onclick='showBgImg(this)'/>
+                <p class="works-name">九九峰</p>
+            </div> 
+                    
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1yO9Ro9p_56-EKGa60vbXY_F0PWbrHj9h' onclick='showBgImg(this)'/>
+                <p class="works-name">貓村</p>
+            </div> 
+                        
+            <div>
+                <img class='thum-img' src='http://drive.google.com/uc?export=view&id=1LApgz3_CL6ASm_btPumDrJL3eEfnUcMi' onclick='showBgImg(this)'/>
+                <p class="works-name">二葉松</p>
+            </div> 
+        </div>
+        <div class=box1>
+            <a href="01_mainpage.html"><br><p>TOP</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById('modal');
+        var bgImg = document.getElementById('bgImg');
+        function showBgImg(e) {
+        modal.style.display = 'block';
+        bgImg.src = e.src;
+        }
+        bgImg.onclick = function() {
+        modal.style.display = 'none';
+        }
+        </script>
+</body>
+</html>

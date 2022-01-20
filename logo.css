@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+}
+@media screen and (min-width:601px) {
+.container{
+    padding:0 50px;
+    height: 760px;
+    
+    
+}
+.photo-list{
+    display: flex;
+    gap:30px 80px;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 0 40px;
+    
+}
+img{
+    width: 100%;
+}
+h1{
+text-align: center;
+margin: 30px 0;
+font-size: 60px;
+}
+.box1{
+text-align: center;
+margin: -50px 40px;
+font-size: 30px;
+}
+a {
+    text-decoration:none;
+}
+.container01{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -50px;
+    
+}
+.layout{
+    display: inline-block;
+    text-align: center;
+    margin: 0 100px;
+}
+.thum-img01{
+    height: 450px;
+    width: 600px;
+}
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -20px;
+}
+h1{
+    
+}
+h2{
+    margin-top: -60px;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+}
+h6{
+    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+    font-weight: 400; 
+    font-style: normal;
+    margin: 10px 0;
+}
+}
+@media screen and (max-width:600px) {
+    .container{
+        padding:0 50px;
+        height: 760px;
+        
+        
+    }
+    .photo-list{
+        display: flex;
+        gap:0px 40px;
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    } 
+    h1{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 60px;
+    }
+    .box1{
+    text-align: center;
+    margin: -50px 40px;
+    font-size: 30px;
+    }
+    a {
+        text-decoration:none;
+    }
+    .container01{
+        margin-top: -50px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        text-align: center;
+        
+    }
+
+    .layout{
+        text-align: center;
+        margin: 0 100px;
+    }
+    .thum-img01{
+        height: 300px;
+        width: 400px;
+    }
+    p{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: -20px;
+    }
+    h1{
+        
+    }
+    h2{
+        margin-top: -40px;
+        text-align: center;
+        font-size: 25px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h6{
+        font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+        font-weight: 400; 
+        font-style: normal;
+        margin: 10px 0;
+    }
+     
+}
